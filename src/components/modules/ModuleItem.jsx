@@ -1,9 +1,6 @@
 import { useState } from 'react';
 import { FiEdit2, FiTrash2 } from 'react-icons/fi';
 
-import LinkColored from '../../assets/LinkColored.svg';
-import PDFColored from '../../assets/PDFcolored.svg';
-
 const ModuleItem = ({ item, onDelete, onRename }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [newTitle, setNewTitle] = useState(item.title);
@@ -29,9 +26,13 @@ const ModuleItem = ({ item, onDelete, onRename }) => {
       <div className="module-item-content">
         <div className="module-item-icon">
           {item.type === 'file' ? (
-            <img src={PDFColored} alt="PDF" className="pdf-icon" />
+            <img src="/assets/PDFcolored.svg" alt="PDF" className="pdf-icon" />
           ) : (
-            <img src={LinkColored} alt="Link" className="link-icon" />
+            <img
+              src="/assets/LinkColored.svg"
+              alt="Link"
+              className="link-icon"
+            />
           )}
         </div>
         <div className="module-item-details">
