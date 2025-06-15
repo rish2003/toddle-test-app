@@ -3,7 +3,7 @@ const EmptyState = () => {
     <div className="empty-state">
       <div className="empty-state-illustration">
         <img
-          src="/src/assets/Resources.svg"
+          src="/assets/Resources.svg"
           alt="Empty illustration"
           className="empty-state-image"
         />
